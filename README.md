@@ -1,16 +1,22 @@
 # the_house_of_hints
 
-A new Flutter project.
+Your escape route is right before your eyes
 
-## Getting Started
+## How to Play?
+TODO: Outline steps for participating in the challenge here
 
-This project is a starting point for a Flutter application.
+## What to do?
 
-A few resources to get you started if this is your first Flutter project:
+You're presented with the default counter app with a welcome message\
+Your task is simple🙂
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Create a second floating action button that squares whatever value the _counter variable currently is and displays it
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## End Result?
+
+
+https://user-images.githubusercontent.com/54294245/138631896-4f5f194d-a012-4f85-94a9-58f98f55d8c2.mp4
+
+
+Go Crazy on the UI!!!\
+Unleash the creative beast in you😤😤😤
