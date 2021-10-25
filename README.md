@@ -15,8 +15,8 @@ Create a second floating action button that squares whatever value the _counter 
 ## End Result?
 
 
-https://user-images.githubusercontent.com/54294245/138631896-4f5f194d-a012-4f85-94a9-58f98f55d8c2.mp4
-
-
 Go Crazy on the UI!!!\
 Unleash the creative beast in you😤😤😤
+
+https://user-images.githubusercontent.com/54294245/138631896-4f5f194d-a012-4f85-94a9-58f98f55d8c2.mp4
+
