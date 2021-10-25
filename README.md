@@ -1,4 +1,4 @@
-# the_house_of_hints
+# The_House_of_Hints
 
 Your escape route is right before your eyes
 
