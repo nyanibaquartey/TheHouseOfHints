@@ -3,7 +3,12 @@
 Your escape route is right before your eyes
 
 ## How to Play?
-TODO: Outline steps for participating in the challenge here
+
+1. Fork this Repo
+2. Get coding
+3. Code even more
+4. Push to your fork
+5. Submit the link to your fork
 
 ## What to do?
 
