@@ -7,7 +7,7 @@ TODO: Outline steps for participating in the challenge here
 
 ## What to do?
 
-You're presented with the default counter app with a welcome message\
+You're presented with the default flutter counter app and a welcome message\
 Your task is simple🙂
 
 Create a second floating action button that squares whatever value the _counter variable currently is and displays it
