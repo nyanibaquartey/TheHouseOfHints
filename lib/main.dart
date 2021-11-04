@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,10 +30,19 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  int _dblCounter = 0; //variable to store the power of 2 value of _counter
 
+  //function to increase number by 1 when user presses button
   void _incrementCounter() {
     setState(() {
       _counter++;
+    });
+  }
+
+  //function to double number when user presses button
+  void _doubleCounter() {
+    setState(() {
+      _dblCounter = _counter * _counter;
     });
   }
 
@@ -43,30 +53,90 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         centerTitle: true,
       ),
-      body: Center(
+      body: SafeArea(
+        maintainBottomViewPadding: true,
+        //Increment section
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            const SizedBox(height: 50),
-            const Text(
-              'Hey there, Prisoner🙂\n Wanna escape? Get coding!',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            Column(
+              children: [
+                const SizedBox(height: 20),
+                const Text(
+                  'Increment:',
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                Container(
+                  padding: const EdgeInsets.all(40.0),
+                  decoration: BoxDecoration(
+                      color: Colors.amberAccent,
+                      borderRadius: BorderRadius.circular(50.0),
+                      border: Border.all(width: 3.0, color: Colors.blue)),
+                  child: Text(
+                    '$_counter',
+                    style: const TextStyle(
+                        color: Colors.blueAccent, fontSize: 30.0),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                FloatingActionButton.extended(
+                  onPressed: _incrementCounter, //function call
+                  tooltip: 'Increment',
+                  label: const Text(
+                    'Single increments',
+                    style: TextStyle(fontSize: 17.0),
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(height: 150),
-            const Text(
-              'You have pushed the button this many times:',
+            const SizedBox(
+              height: 10.0,
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            //Power of 2 section
+            Column(
+              children: <Widget>[
+                Column(
+                  children: [
+                    const SizedBox(height: 20),
+                    const Text(
+                      'Power of 2:',
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(
+                      height: 20.0,
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(40.0),
+                      decoration: BoxDecoration(
+                          color: Colors.pinkAccent,
+                          borderRadius: BorderRadius.circular(50.0),
+                          border: Border.all(width: 3.0, color: Colors.blue)),
+                      child: Text(
+                        '$_dblCounter',
+                        style: const TextStyle(
+                            color: Colors.blueAccent, fontSize: 30.0),
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    FloatingActionButton.extended(
+                      onPressed: _doubleCounter, //function call
+                      tooltip: 'Power of 2',
+                      label: const Text(
+                        'Double the number',
+                        style: TextStyle(fontSize: 17.0),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
       ),
     );
   }
